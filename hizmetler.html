@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yardım Kapısı — Acil yardım, güvenilir usta</title>
-  <meta name="description" content="Tesisattan tamirciye, diyetisyenden elektrikçiye — ihtiyacınız olan uzmana tek yerden ulaşın.">
+  <title>Hizmetler — Yardım Kapısı</title>
+  <meta name="description" content="Tesisat, oto tamir, diyetisyen, elektrik ve daha fazlası — ihtiyacınız olan kategoriye girin.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -17,9 +17,9 @@
     <nav class="navbar" aria-label="Ana menü">
       <a class="navbar__brand" href="index.html">Yardım<span>Kapısı</span></a>
       <ul class="navbar__links">
-        <li><a href="hizmetler.html">Hizmetler</a></li>
-        <li><a href="#nasil">Nasıl çalışır</a></li>
-        <li><a href="#iletisim">İletişim</a></li>
+        <li><a href="hizmetler.html" aria-current="page">Hizmetler</a></li>
+        <li><a href="index.html#nasil">Nasıl çalışır</a></li>
+        <li><a href="index.html#iletisim">İletişim</a></li>
       </ul>
       <div class="navbar__toolbar">
         <div class="navbar__actions">
@@ -33,89 +33,75 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="hero__inner">
-        <p class="hero__eyebrow">Tek platform, yüzlerce uzman</p>
-        <h1 id="hero-title" class="hero__title">
-          Acil ihtiyaçlarınıza <em>anında</em> yanıt
-        </h1>
-        <p class="hero__lead">
-          Tesisat, araba tamiri, beslenme, elektrik — aradığınız hizmeti bulun, güvenilir profesyonellerle eşleşin, zaman kazanın.
-        </p>
-        <form class="hero__search" role="search" action="#" method="get">
-          <label class="visually-hidden" for="q">Ne arıyorsunuz?</label>
-          <input id="q" name="q" type="search" placeholder="Örn: Acil su kaçağı, fren, diyetisyen…" autocomplete="off">
-          <button type="submit" class="btn btn--primary">Ara</button>
-        </form>
-        <ul class="hero__stats">
-          <li><strong>24/7</strong> acil eşleştirme</li>
-          <li><strong>Doğrulanmış</strong> uzmanlar</li>
-          <li><strong>Şeffaf</strong> iletişim</li>
-        </ul>
+  <main id="icerik">
+    <nav class="breadcrumb" aria-label="Sayfa konumu">
+      <a href="index.html">Ana sayfa</a>
+      <span class="breadcrumb__sep" aria-hidden="true">/</span>
+      <span aria-current="page">Hizmetler</span>
+    </nav>
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="page-hero__inner">
+        <p class="page-hero__eyebrow">Kategoriler</p>
+        <h1 id="page-title" class="page-hero__title">İhtiyacınıza göre uzman seçin</h1>
+        <p class="page-hero__lead">Aradığınız alana girin; doğrulanmış profilleri listeleyin, tek tıkla iletişime geçin.</p>
+        <div class="page-hero__bar">
+          <form class="page-hero__search" role="search" action="#" method="get">
+            <label class="visually-hidden" for="hq">Kategori veya il ara</label>
+            <input id="hq" name="q" type="search" placeholder="Örn: Tesisat, diyetisyen, Kadıköy…" autocomplete="off">
+            <button type="submit" class="btn btn--primary">Ara</button>
+          </form>
+          <p class="page-hero__meta"><span><strong>6+</strong> ana kategori</span> <span><strong>Yerel</strong> eşleştirme</span></p>
+        </div>
       </div>
     </section>
 
-    <section id="icerik" class="section section--alt">
+    <section class="section section--alt">
       <div class="container">
         <header class="section__head">
-          <h2 id="hizmetler">Popüler kategoriler</h2>
-          <p>Her ihtiyaç için bir kapı — seçin, iletişime geçin.</p>
+          <h2>Tüm kategoriler</h2>
+          <p>Bir kutuya tıklayarak ilgili liste sayfasına gidin.</p>
         </header>
 
         <div class="grid-cards">
           <article class="card">
             <span class="card__icon" aria-hidden="true">🔧</span>
             <h3 class="card__title">Tesisat &amp; kombi</h3>
-            <p class="card__text">Kaçak, tıkanıklık, montaj — su ve ısı için usta.</p>
-            <a href="kategori/tesisat.html" class="card__link">Keşfet →</a>
+            <p class="card__text">Kaçak, tıkanıklık, montaj.</p>
+            <a href="kategori/tesisat.html" class="card__link">Listeyi aç →</a>
           </article>
           <article class="card">
             <span class="card__icon" aria-hidden="true">🚗</span>
             <h3 class="card__title">Oto tamir</h3>
-            <p class="card__text">Mekanik, elektrik, lastik — aracınız güvende.</p>
-            <a href="kategori/oto-tamir.html" class="card__link">Keşfet →</a>
+            <p class="card__text">Mekanik, elektrik, lastik.</p>
+            <a href="kategori/oto-tamir.html" class="card__link">Listeyi aç →</a>
           </article>
           <article class="card">
             <span class="card__icon" aria-hidden="true">🥗</span>
             <h3 class="card__title">Diyetisyen</h3>
-            <p class="card__text">Beslenme planı, kronik hastalık, sağlıklı yaşam.</p>
-            <a href="kategori/diyetisyen.html" class="card__link">Keşfet →</a>
+            <p class="card__text">Beslenme planı ve danışmanlık.</p>
+            <a href="kategori/diyetisyen.html" class="card__link">Listeyi aç →</a>
           </article>
           <article class="card">
             <span class="card__icon" aria-hidden="true">⚡</span>
             <h3 class="card__title">Elektrik</h3>
-            <p class="card__text">Arıza, pano, aydınlatma — güvenli çözüm.</p>
-            <a href="kategori/elektrik.html" class="card__link">Keşfet →</a>
+            <p class="card__text">Arıza, pano, aydınlatma.</p>
+            <a href="kategori/elektrik.html" class="card__link">Listeyi aç →</a>
           </article>
           <article class="card">
             <span class="card__icon" aria-hidden="true">🏠</span>
             <h3 class="card__title">Ev tadilat</h3>
-            <p class="card__text">Boya, fayans, mobilya — eviniz için elverişli usta.</p>
-            <a href="kategori/ev-tadilat.html" class="card__link">Keşfet →</a>
+            <p class="card__text">Boya, fayans, montaj.</p>
+            <a href="kategori/ev-tadilat.html" class="card__link">Listeyi aç →</a>
           </article>
           <article class="card">
             <span class="card__icon" aria-hidden="true">🩺</span>
             <h3 class="card__title">Sağlık &amp; destek</h3>
-            <p class="card__text">Fizyoterapi, hemşirelik — ihtiyaç duyduğunuz bakım.</p>
-            <a href="kategori/saglik.html" class="card__link">Keşfet →</a>
+            <p class="card__text">Fizyoterapi ve bakım.</p>
+            <a href="kategori/saglik.html" class="card__link">Listeyi aç →</a>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section id="nasil" class="section">
-      <div class="container container--narrow">
-        <header class="section__head">
-          <h2>Nasıl çalışır?</h2>
-          <p>Üç adımda doğru kişiye ulaşın.</p>
-        </header>
-        <ol class="steps">
-          <li><span>1</span> İhtiyacınızı veya konumunuzu yazın.</li>
-          <li><span>2</span> Uzmanları karşılaştırın, yorumları okuyun.</li>
-          <li><span>3</span> Mesaj veya arama ile hızlıca görüşün.</li>
-        </ol>
       </div>
     </section>
   </main>

@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  width: min(100% - 2rem, $container-max);
+  margin: 0 auto;
+  padding: 1rem 0 0;
+  font-size: 0.84rem;
+  color: $color-muted;
+
+  a {
+    color: $color-muted;
+    transition: color $transition;
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+
+  [aria-current="page"] {
+    color: $color-text;
+    font-weight: 500;
+  }
+
+  &__sep {
+    user-select: none;
+    opacity: 0.5;
+  }
+}

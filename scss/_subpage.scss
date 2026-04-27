@@ -1,0 +1,133 @@
+@use "variables" as *;
+@use "sass:color";
+
+// Alt sayfa: ince hero, arama, intro
+.page-hero {
+  position: relative;
+  padding: 1.5rem 1rem 2.5rem;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 2rem 1rem 3rem;
+  }
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 50% at 50% -30%, rgba(61, 139, 253, 0.22), transparent 55%),
+      linear-gradient(180deg, $color-bg 0%, color.adjust($color-bg, $lightness: 3%) 100%);
+    pointer-events: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.55;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-opacity='0.04' d='M0 40L40 0M-10 10L10-10M30 50L50 30'/%3E%3C/svg%3E");
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    width: min(100% - 2rem, $container-max);
+    margin-inline: auto;
+  }
+
+  &__eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $color-accent;
+  }
+
+  &__title {
+    margin: 0 0 0.65rem;
+    font-family: $font-display;
+    font-size: clamp(1.85rem, 4vw, 2.65rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: $color-text;
+  }
+
+  &__lead {
+    margin: 0 0 1.5rem;
+    max-width: 42em;
+    font-size: 1rem;
+    color: $color-muted;
+    line-height: 1.6;
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    @media (min-width: $breakpoint-md) {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__search {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+
+    input {
+      flex: 1 1 220px;
+      min-height: 2.85rem;
+      padding: 0 1rem;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: $color-text;
+      background: $color-surface-elevated;
+      border: 1px solid $color-border;
+      border-radius: $radius-md;
+
+      &::placeholder {
+        color: $color-muted;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: rgba(61, 139, 253, 0.45);
+        box-shadow: 0 0 0 3px $color-accent-soft;
+      }
+    }
+
+    .btn {
+      min-height: 2.85rem;
+      padding-inline: 1.25rem;
+      border-radius: $radius-md;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-size: 0.85rem;
+    color: $color-muted;
+
+    span strong {
+      color: $color-text;
+      font-weight: 600;
+    }
+  }
+}
+
+.section__intro {
+  max-width: 52ch;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-size: 0.98rem;
+  color: $color-muted;
+  line-height: 1.65;
+}

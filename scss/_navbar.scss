@@ -53,6 +53,10 @@
       &:hover {
         color: $color-text;
       }
+
+      &[aria-current="page"] {
+        color: $color-text;
+      }
     }
 
     &--open {
