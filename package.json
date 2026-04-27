@@ -1,0 +1,14 @@
+{
+  "name": "yardim-kapisi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Acil yardım ve yerel hizmet buluşma platformu — HTML + modern SASS",
+  "scripts": {
+    "sass": "sass scss/main.scss:css/main.css --style=expanded --source-map",
+    "sass:watch": "sass scss/main.scss:css/main.css --style=expanded --source-map --watch",
+    "build": "sass scss/main.scss:css/main.css --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

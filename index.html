@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yardım Kapısı — Acil yardım, güvenilir usta</title>
+  <meta name="description" content="Tesisattan tamirciye, diyetisyenden elektrikçiye — ihtiyacınız olan uzmana tek yerden ulaşın.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Ana menü">
+      <a class="navbar__brand" href="/">Yardım<span>Kapısı</span></a>
+      <ul class="navbar__links">
+        <li><a href="#hizmetler">Hizmetler</a></li>
+        <li><a href="#nasil">Nasıl çalışır</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+      <div class="navbar__toolbar">
+        <div class="navbar__actions">
+          <a class="btn btn--ghost" href="#">Giriş</a>
+          <a class="btn btn--primary" href="#">Hizmet ver</a>
+        </div>
+        <button type="button" class="navbar__toggle" aria-expanded="false" aria-label="Menüyü aç">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">Tek platform, yüzlerce uzman</p>
+        <h1 id="hero-title" class="hero__title">
+          Acil ihtiyaçlarınıza <em>anında</em> yanıt
+        </h1>
+        <p class="hero__lead">
+          Tesisat, araba tamiri, beslenme, elektrik — aradığınız hizmeti bulun, güvenilir profesyonellerle eşleşin, zaman kazanın.
+        </p>
+        <form class="hero__search" role="search" action="#" method="get">
+          <label class="visually-hidden" for="q">Ne arıyorsunuz?</label>
+          <input id="q" name="q" type="search" placeholder="Örn: Acil su kaçağı, fren, diyetisyen…" autocomplete="off">
+          <button type="submit" class="btn btn--primary">Ara</button>
+        </form>
+        <ul class="hero__stats">
+          <li><strong>24/7</strong> acil eşleştirme</li>
+          <li><strong>Doğrulanmış</strong> uzmanlar</li>
+          <li><strong>Şeffaf</strong> iletişim</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="icerik" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="hizmetler">Popüler kategoriler</h2>
+          <p>Her ihtiyaç için bir kapı — seçin, iletişime geçin.</p>
+        </header>
+
+        <div class="grid-cards">
+          <article class="card">
+            <span class="card__icon" aria-hidden="true">🔧</span>
+            <h3 class="card__title">Tesisat &amp; kombi</h3>
+            <p class="card__text">Kaçak, tıkanıklık, montaj — su ve ısı için usta.</p>
+            <a href="#" class="card__link">Keşfet →</a>
+          </article>
+          <article class="card">
+            <span class="card__icon" aria-hidden="true">🚗</span>
+            <h3 class="card__title">Oto tamir</h3>
+            <p class="card__text">Mekanik, elektrik, lastik — aracınız güvende.</p>
+            <a href="#" class="card__link">Keşfet →</a>
+          </article>
+          <article class="card">
+            <span class="card__icon" aria-hidden="true">🥗</span>
+            <h3 class="card__title">Diyetisyen</h3>
+            <p class="card__text">Beslenme planı, kronik hastalık, sağlıklı yaşam.</p>
+            <a href="#" class="card__link">Keşfet →</a>
+          </article>
+          <article class="card">
+            <span class="card__icon" aria-hidden="true">⚡</span>
+            <h3 class="card__title">Elektrik</h3>
+            <p class="card__text">Arıza, pano, aydınlatma — güvenli çözüm.</p>
+            <a href="#" class="card__link">Keşfet →</a>
+          </article>
+          <article class="card">
+            <span class="card__icon" aria-hidden="true">🏠</span>
+            <h3 class="card__title">Ev tadilat</h3>
+            <p class="card__text">Boya, fayans, mobilya — eviniz için elverişli usta.</p>
+            <a href="#" class="card__link">Keşfet →</a>
+          </article>
+          <article class="card">
+            <span class="card__icon" aria-hidden="true">🩺</span>
+            <h3 class="card__title">Sağlık &amp; destek</h3>
+            <p class="card__text">Fizyoterapi, hemşirelik — ihtiyaç duyduğunuz bakım.</p>
+            <a href="#" class="card__link">Keşfet →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nasil" class="section">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <h2>Nasıl çalışır?</h2>
+          <p>Üç adımda doğru kişiye ulaşın.</p>
+        </header>
+        <ol class="steps">
+          <li><span>1</span> İhtiyacınızı veya konumunuzu yazın.</li>
+          <li><span>2</span> Uzmanları karşılaştırın, yorumları okuyun.</li>
+          <li><span>3</span> Mesaj veya arama ile hızlıca görüşün.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer id="iletisim" class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <a class="footer__brand" href="/">Yardım<span>Kapısı</span></a>
+        <p class="footer__tagline">Yerel hizmetleri bir araya getiren, sade bir köprü.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Alt bağlantılar">
+        <a href="#">Gizlilik</a>
+        <a href="#">Kullanım şartları</a>
+        <a href="#">Yardım merkezi</a>
+      </nav>
+      <p class="footer__copy">&copy; <span id="yil">2026</span> Yardım Kapısı</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.navbar__toggle');
+      var links = document.querySelector('.navbar__links');
+      if (btn && links) {
+        btn.addEventListener('click', function () {
+          var open = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', !open);
+          links.classList.toggle('navbar__links--open', !open);
+        });
+      }
+      var y = document.getElementById('yil');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

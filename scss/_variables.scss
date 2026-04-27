@@ -1,0 +1,24 @@
+// Tasarım belirteçleri
+$font-sans: "DM Sans", system-ui, sans-serif;
+$font-display: "Instrument Serif", Georgia, serif;
+
+$color-bg: #0c0f14;
+$color-surface: #141922;
+$color-surface-elevated: #1c222e;
+$color-border: rgba(255, 255, 255, 0.08);
+$color-text: #e8eaef;
+$color-muted: #8b93a7;
+$color-accent: #3d8bfd;
+$color-accent-soft: rgba(61, 139, 253, 0.15);
+$color-accent-glow: rgba(61, 139, 253, 0.35);
+
+$radius-sm: 10px;
+$radius-md: 16px;
+$radius-lg: 24px;
+
+$shadow-soft: 0 24px 48px rgba(0, 0, 0, 0.35);
+$transition: 0.2s ease;
+
+$container-max: 1120px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
